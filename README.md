@@ -2,11 +2,33 @@
 
 The advantage of Markdown is that it is not overly complex. It is also its disadvantage. [Vanilla Markdown](https://daringfireball.net/projects/markdown/) lacks many of the features that I usually use when writing documentation. One of them is admonition (aka callout, box, alert, notification, etc).
 
-There is no built-in admonition formatting in vanilla Markdown. It is available only in some advanced flavors (e.g.: [Docusaurus](https://docusaurus.io/docs/markdown-features/admonitions) or [MkDocs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)). However, there are a couple of workarounds to this issue:
+~~There is no built-in admonition formatting in vanilla Markdown. It is available only in some advanced flavors (e.g.: [Docusaurus](https://docusaurus.io/docs/markdown-features/admonitions) or [MkDocs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)). However, there are a couple of workarounds to this issue:~~
 
-- [Simple Table](#simple-table),
-- [HTML Table](#html-table),
-- [SVG Boxes](#svg-boxes).
+- ~~[Simple Table](#simple-table),~~
+- ~~[HTML Table](#html-table),~~
+- ~~[SVG Boxes](#svg-boxes).~~
+
+**Update**: Since this article was first published, GitHub has added native support for admonitions (also called *alerts*) in Markdown. For documentation intended to be read on GitHub, the built-in syntax is now the simplest and most maintainable option. See examples below.
+
+```
+> [!NOTE]/[!TIP]/[!IMPORTANT]/[!WARNING]/[!CAUTION]
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+```
+
+> [!NOTE]
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+
+> [!TIP]
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+
+> [!IMPORTANT]
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+
+> [!WARNING]
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+
+> [!CAUTION]
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
 
 ## Simple Table
 
